@@ -1,0 +1,24 @@
+<h1>Editing version</h1>
+
+<% form_for(@version) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :game_id %><br />
+    <%= f.text_field :game_id %>
+  </p>
+  <p>
+    <%= f.label :region %><br />
+    <%= f.text_field :region %>
+  </p>
+  <p>
+    <%= f.label :console_id %><br />
+    <%= f.text_field :console_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @version %> |
+<%= link_to 'Back', versions_path %>

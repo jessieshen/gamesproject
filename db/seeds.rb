@@ -5,3 +5,5 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+companies = Company.create([{:name => 'Nintendo'}, {:name => 'EA'}, {:name => 'Playfish'}])

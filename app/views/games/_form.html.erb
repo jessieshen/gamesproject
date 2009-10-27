@@ -1,0 +1,11 @@
+ <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :company_id %><br />
+	<%= collection_select(:gmae, :compay_id, Company.all, :id, :name)%>
+  
+  </p>

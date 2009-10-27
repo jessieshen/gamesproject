@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @game.name %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%=h @game.company.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
