@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :companies
+  map.resources :releases
 
+  map.resources :companies do |company|
+    company.resources :games
+  end
+  
   map.resources :versions
 
   map.resources :games

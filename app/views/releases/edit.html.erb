@@ -1,0 +1,25 @@
+<h1>Editing release</h1>
+
+<% form_for(@release) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date %><br />
+	<%= date_select(:release, :date. :use_short_month => true)%>
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </p>
+  <p>
+    <%= f.label :version_id %><br />
+    <%= f.text_field :version_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @release %> |
+<%= link_to 'Back', releases_path %>

@@ -1,9 +1,16 @@
 class GamesController < ApplicationController
+  
+  before_filter :company, :only => [:index]
+  
   # GET /games
   # GET /games.xml
   def index
+    if @company
+      @games = @company.games
+    else 
     @games = Game.all
-
+  end
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @games }
@@ -81,5 +88,10 @@ class GamesController < ApplicationController
       format.html { redirect_to(games_url) }
       format.xml  { head :ok }
     end
+  end
+
+  private
+  def company
+    @company = Company.find(params[:company_id]) if params[:company_id]
   end
 end

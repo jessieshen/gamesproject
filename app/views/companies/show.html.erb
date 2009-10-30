@@ -3,6 +3,6 @@
   <%=h @company.name %>
 </p>
 
-
+<%= link_to "Games", company_games_path(@company) %>
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %>

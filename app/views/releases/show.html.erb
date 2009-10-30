@@ -1,0 +1,18 @@
+<p>
+  <b>Date:</b>
+  <%=h @release.date %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @release.country_id %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%=h @release.version_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>

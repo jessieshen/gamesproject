@@ -1,0 +1,15 @@
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date %><br />
+	<%= f.date_select(:date, :use_short_month => true, :order => [:day, :month, :year])%>
+    
+  </p>
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </p>
+  <p>
+    <%= f.label :version_id %><br />
+    <%= f.text_field :version_id %>
+  </p>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2009-10-30
+  country_id: MyString
+  version_id: 1
+
+two:
+  date: 2009-10-30
+  country_id: MyString
+  version_id: 1
